@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="bootstrap-3.2.0-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <h2 class="text-center">bootstrap 3 validation</h2>
+
+    <!-- 在form标签里加 data&#45;toggle="validator" 就不需要通过 jquery $('#myForm').validator() 来触发 -->
+    <form data-toggle="validator" class="container" action="php/text.php">
+        <div class="form-group">
+            <input type="text" pattern="^[-+]?\d+(\.\d+)?$" maxlength="20" class="form-control" id="inputTwitter" placeholder="1000hz" required>
+        </div>
+        <div class="form-group">
+            <input type="text" maxlength="20" pattern="^[-+]?\d+(\.\d+)?$" class="form-control" id="input2" placeholder="1000hz" required>
+        </div>
+
+        <button data-validType="allClear" class="btn btn-success">Submit</button>
+    </form>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+    <script src="js/validator.js"></script>
+    <script>
+
+        
+
+    </script>
+</body>
+
+</html>

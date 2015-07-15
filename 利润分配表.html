@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!-- saved from url=(0341)http://localhost:29533/Library/WebInsertXmlPage.tkx?Source=Report%2FProfitAppropriation&ReportName=ProfitAppropriation&Company=6&RetURL=http%3A%2F%2Flocalhost%3A29533%2FLibrary%2FWebListXmlPage.tkx%3FSource%3DAccounting%252FReportData%26Company%3D6%26Page%3D0%26Condition%3D%26Tab%3D%26TotalCount%3D0%26TotalPage%3D0%26Sort%3D2%26Order%3DASC -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>利润分配表</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="bootstrap-3.2.0-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body id="WebInsertXmlPage" class="tk-dataPage" data-webpath="/">
+    <div class="container">
+        <br>
+        <h1 class="text-center">利润分配表</h1>
+        <br>
+        <form action="http://localhost:29533/Library/" method="POST" data-toggle="validator" id="PostForm" class="tk-dataform p5 mb15" role="form" novalidate="true">
+            <div class="row tk-datatable table-row" id="Info" data-searchmethod="Id">
+                <div class="col-sm-4">
+                    <div class="row">
+                        <label class="col-sm-4 ver-middle">报表类型：</label>
+                        <div class="col-sm-8 ">
+                            <span class="tk-control">
+                        <select id="ReportType" name="ReportType" class="form-control" data-title="市场板块">
+                            <option value="01">
+                                合并报表
+                            </option>
+                            <option value="02">
+                                母公司报表
+                            </option>
+                        </select>
+                    </span>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <label class="col-sm-2 ver-middle">日期：</label>
+                        <span class="tk-control">
+                    <div id="_RptDateCtrl" class="input-group date" data-control="CustomDate" data-date-format="yyyy-mm" data-date="">
+                        <input type="text" size="10" readonly="" placeholder="日期" id="ReportDate" name="ReportDate" class="form-control" data-title="日期" value="">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-remove"></i></span>
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                    </div>
+                    </span>
+                </div>
+                <br>
+            </div>
+            <div class="col-sm-2">
+                <div class="row ml20">
+                    <strong class="ver-middle">单位：元</strong>
+                    <input id="ReportName" type="hidden" value="ProfitAppropriation">
+                    <input id="Company" type="hidden" value="6">
+                    <input id="ReportId" type="hidden">
+                </div>
+            </div>
+    </div>
+    <br>
+    <div id="ReportData" class="tk-datatable table-row column1" data-searchmethod="Id">
+        <div class="hide">
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>资产</th>
+                            <th>行次</th>
+                            <th>期末数</th>
+                        </tr>
+                        <tr>
+                            <td>一、净利润</td>
+                            <td>1</td>
+                            <td>
+                                <div class="form-group">
+                                    <span class="tk-control"><input type="Text" value="" placeholder="一、净利润" id="净利润" name="净利润" class="form-control" data-title="一、净利润" pattern="^[-+]?\d+(\.\d+)?$"> <label class="help-block" style="display: none;"></label></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pdl-2">加：年初未分配利润</td>
+                            <td>2</td>
+                            <td>
+                                <div class="form-group">
+                                    <span class="tk-control"><input type="Text" value="" placeholder="加：年初未分配利润" id="年初未分配利润" name="年初未分配利润" class="form-control" data-title="加：年初未分配利润" pattern="^[-+]?\d+(\.\d+)?$"> <label class="help-block" style="display: none;"></label></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pdl-4">其他转入</td>
+                            <td>4</td>
+                            <td>
+                                <div class="form-group">
+                                    <span class="tk-control"><input type="Text" value="" placeholder="其他转入" id="其他转入" name="其他转入" class="form-control" data-title="其他转入" pattern="^[-+]?\d+(\.\d+)?$"> <label class="help-block" style="display: none;"></label></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>二、可供分配的利润</td>
+                            <td>8</td>
+                            <td>
+                                <div class="form-group">
+                                    <span class="tk-control"><input type="Text" value="" placeholder="二、可供分配的利润" id="可供分配的利润" name="可供分配的利润" class="form-control" data-title="二、可供分配的利润" pattern="^[-+]?\d+(\.\d+)?$"> <label class="help-block" style="display: none;"></label></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pdl-2">减：提取法定盈余公积</td>
+                            <td>9</td>
+                            <td>
+                                <div class="form-group">
+                                    <span class="tk-control"><input type="Text" value="" placeholder="减：提取法定盈余公积" id="法定盈余公积" name="法定盈余公积" class="form-control" data-title="减：提取法定盈余公积" pattern="^[-+]?\d+(\.\d+)?$"> <label class="help-block" style="display: none;"></label></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pdl-4">提取法定公益金</td>
+                            <td>10</td>
+                            <td>
+                                <div class="form-group">
+                                    <span class="tk-control"><input type="Text" value="" placeholder="提取法定公益金" id="法定公益金" name="法定公益金" class="form-control" data-title="提取法定公益金" pattern="^[-+]?\d+(\.\d+)?$"> <label class="help-block" style="display: none;"></label></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pdl-4">提取职工奖励及福利基金</td>
+                            <td>11</td>
+                            <td>
+                                <div class="form-group">
+                                    <span class="tk-control"><input type="Text" value="" placeholder="提取职工奖励及福利基金" id="职工奖励及福利" name="职工奖励及福利" class="form-control" data-title="提取职工奖励及福利基金" pattern="^[-+]?\d+(\.\d+)?$"> <label class="help-block" style="display: none;"></label></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pdl-4">提取储备基金</td>
+                            <td>12</td>
+                            <td>
+                                <div class="form-group">
+                                    <span class="tk-control"><input type="Text" value="" placeholder="提取储备基金" id="储备基金" name="储备基金" class="form-control" data-title="提取储备基金" pattern="^[-+]?\d+(\.\d+)?$"> <label class="help-block" style="display: none;"></label></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pdl-4">提取企业发展基金</td>
+                            <td>13</td>
+                            <td>
+                                <div class="form-group">
+                                    <span class="tk-control"><input type="Text" value="" placeholder="提取企业发展基金" id="企业发展基金" name="企业发展基金" class="form-control" data-title="提取企业发展基金" pattern="^[-+]?\d+(\.\d+)?$"> <label class="help-block" style="display: none;"></label></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pdl-4">利润归还投资</td>
+                            <td>14</td>
+                            <td>
+                                <div class="form-group">
+                                    <span class="tk-control"><input type="Text" value="" placeholder="利润归还投资" id="投资归还" name="投资归还" class="form-control" data-title="利润归还投资" pattern="^[-+]?\d+(\.\d+)?$"> <label class="help-block" style="display: none;"></label></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>三、可供投资者分配的利润</td>
+                            <td>16</td>
+                            <td>
+                                <div class="form-group">
+                                    <span class="tk-control"><input type="Text" value="" placeholder="三、可供投资者分配的利润" id="投资者利润" name="投资者利润" class="form-control" data-title="三、可供投资者分配的利润" pattern="^[-+]?\d+(\.\d+)?$"> <label class="help-block" style="display: none;"></label></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pdl-2">减：应付优先股股利</td>
+                            <td>17</td>
+                            <td>
+                                <div class="form-group">
+                                    <span class="tk-control"><input type="Text" value="" placeholder="减：应付优先股股利" id="优先股股利" name="优先股股利" class="form-control" data-title="减：应付优先股股利" pattern="^[-+]?\d+(\.\d+)?$"> <label class="help-block" style="display: none;"></label></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pdl-4">提取任意盈余公积</td>
+                            <td>18</td>
+                            <td>
+                                <div class="form-group">
+                                    <span class="tk-control"><input type="Text" value="" placeholder="提取任意盈余公积" id="任意盈余公积" name="任意盈余公积" class="form-control" data-title="提取任意盈余公积" pattern="^[-+]?\d+(\.\d+)?$"> <label class="help-block" style="display: none;"></label></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pdl-4">应付普通股股利</td>
+                            <td>19</td>
+                            <td>
+                                <div class="form-group">
+                                    <span class="tk-control"><input type="Text" value="" placeholder="应付普通股股利" id="普通股股利" name="普通股股利" class="form-control" data-title="应付普通股股利" pattern="^[-+]?\d+(\.\d+)?$"> <label class="help-block" style="display: none;"></label></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pdl-4">转作资本（或股本）的普通股股利</td>
+                            <td>20</td>
+                            <td>
+                                <div class="form-group">
+                                    <span class="tk-control"><input type="Text" value="" placeholder="转作资本（或股本）的普通股股利" id="其他普通股股利" name="其他普通股股利" class="form-control" data-title="转作资本（或股本）的普通股股利" pattern="^[-+]?\d+(\.\d+)?$"> <label class="help-block" style="display: none;"></label></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>四、未分配利润</td>
+                            <td>25</td>
+                            <td>
+                                <div class="form-group">
+                                    <span class="tk-control"><input type="Text" value="" placeholder="四、未分配利润" id="未分配利润" name="未分配利润" class="form-control" data-title="四、未分配利润" pattern="^[-+]?\d+(\.\d+)?$"> <label class="help-block" style="display: none;"></label></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="text-center clearfix">
+        <button type="button" class="btn btn-primary btn-submit" data-validType="allClear" href="javascript:void(0);">保存</button>
+        <button type="button" class="btn btn-default m10" data-action="return" data-url="/Library/WebListXmlPage.tkx?Source=Accounting/ReportData&amp;Company=6">返回</button>
+    </div>
+    </form>
+    </div>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+    <script src="js/validator.js"></script>
+</body>
+
+</html>
