@@ -1,0 +1,8 @@
+1.报表输入的界面，尽量限制为只能输入数字
+
+2.最好显示为带千位分隔符加两位小数的格式
+
+两位小数点 toFixed, outputmoney
+
+3.数字以右对齐为好
+text-align: right // .text-right

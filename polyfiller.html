@@ -1,0 +1,29 @@
+<!doctype html>
+<html ng-app>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="bootstrap-3.2.0-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="text-center">polyfiller.js</h2>
+        <form action="#">
+            <input type="number" data-number-to-fixed="2" id="num" class="form-control text-right" />
+        </form>
+        <button id="btn" class="btn btn-default">click</button>
+    </div>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/polyfiller.js"></script>
+    <script>
+        webshims.setOptions('forms-ext', {
+            replaceUI: 'auto',
+            types: 'number'
+        });
+        
+        webshims.polyfill('forms forms-ext');
+    </script>
+</body>
+
+</html>
